@@ -1,0 +1,30 @@
+[alias]
+	br = branch
+	bra = branch --all
+
+	cm = commit
+
+	df = diff
+	dfs = diff --staged
+
+	logg = log --graph --decorate --oneline --all
+
+	rs = restore
+	rss = restore --staged
+
+	st = status
+	sts = status --short
+
+	sw = switch
+
+[core]
+	editor = vim
+
+[init]
+	defaultBranch = main
+
+[user]
+	name = aknapper 
+	email = 34011307+aknapper@users.noreply.github.com
+
+
