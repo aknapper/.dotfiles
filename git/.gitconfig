@@ -1,8 +1,22 @@
+[core]
+	editor = vim
+	ignorecase = false
+
+[user]
+	name =  Aaron Knapper
+	useConfigOnly = true
+
 [alias]
+	a = add
+	aa = add --all
+
 	br = branch
 	bra = branch --all
 
-	cm = commit
+	ca = commit --amend --no-edit
+	cmsg = commit -m
+
+	co = checkout
 
 	df = diff
 	dfs = diff --staged
@@ -12,19 +26,28 @@
 	rs = restore
 	rss = restore --staged
 
-	st = status
-	sts = status --short
+	re = remote
+	rev = remote -v
+
+	s = status
+	ss = status --short --branch
 
 	sw = switch
+	swc = switch -c
 
-[core]
-	editor = vim
+	# useful one liners
+	email = config --local user.email
+	orphan = ! git log --pretty=oneline --abbrev-commit --graph --decorate `git reflog | cut -d \" \" -f 1`
 
 [init]
 	defaultBranch = main
 
-[user]
-	name = aknapper 
-	email = 34011307+aknapper@users.noreply.github.com
+[diff]
+	renames = copies
 
+[grep]
+	lineNumber = true
+
+[fetch]
+	prune = true
 
