@@ -9,3 +9,6 @@ require("config.lazy")
 
 -- set vim colorscheme
 vim.cmd.colorscheme "catppuccin"
+
+-- true colour
+vim.o.termguicolors = true
