@@ -8,7 +8,7 @@ vim.cmd("set shiftwidth=2")
 require("config.lazy")
 
 -- set vim colorscheme
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "nordic"
 
 -- true colour
 vim.o.termguicolors = true
