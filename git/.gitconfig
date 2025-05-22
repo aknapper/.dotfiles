@@ -1,53 +1,64 @@
 [core]
-	editor = vim
-	ignorecase = false
+    editor = vim
+    ignorecase = false
+    pager = delta
 
 [user]
-	name =  Aaron Knapper
-	useConfigOnly = true
+    name = Aaron Knapper
+    useConfigOnly = true
 
 [alias]
-	a = add
-	aa = add --all
+    a = add
+    aa = add --all
 
-	br = branch
-	bra = branch --all
+    br = branch
+    bra = branch --all
 
-	ca = commit --amend --no-edit
-	cmsg = commit -m
+    ca = commit --amend --no-edit
+    cmsg = commit -m
 
-	co = checkout
+    co = checkout
 
-	df = diff
-	dfs = diff --staged
+    df = diff
+    dfs = diff --staged
 
-	logg = log --graph --decorate --oneline --all
+    logg = log --graph --decorate --oneline --all
 
-	rs = restore
-	rss = restore --staged
+    rs = restore
+    rss = restore --staged
 
-	re = remote
-	rev = remote -v
+    re = remote
+    rev = remote -v
 
-	s = status
-	ss = status --short --branch
+    s = status
+    ss = status --short --branch
 
-	sw = switch
-	swc = switch -c
+    sw = switch
+    swc = switch -c
 
-	# useful one liners
-	email = config --local user.email
-	orphan = ! git log --pretty=oneline --abbrev-commit --graph --decorate `git reflog | cut -d \" \" -f 1`
+    # useful one liners
+    email = config --local user.email
+    orphan = ! git log --pretty=oneline --abbrev-commit --graph --decorate `git reflog | cut -d \" \" -f 1`
 
 [init]
-	defaultBranch = main
+    defaultBranch = main
 
 [diff]
-	renames = copies
+    renames = copies
 
 [grep]
-	lineNumber = true
+    lineNumber = true
 
 [fetch]
-	prune = true
+    prune = true
 
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    dark = true
+    line-numbers = true
+
+[merge]
+    conflictstyle = zdiff3
