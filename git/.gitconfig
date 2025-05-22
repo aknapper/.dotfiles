@@ -36,7 +36,7 @@
     sw = switch
     swc = switch -c
 
-	# useful one liners
+    # useful one liners
     email = config --local user.email
     orphan = ! git log --pretty=oneline --abbrev-commit --graph --decorate `git reflog | cut -d \" \" -f 1`
 
